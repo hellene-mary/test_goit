@@ -1,0 +1,39 @@
+{
+  "users": [
+  {
+    "id": 1,
+    "user": "Elon Reeve Musk",
+    "tweets": 777,
+    "followers": 100500,
+    "avatar": "avatar.jpg"
+  },
+  {
+    "id": 2,
+    "user": "Rosie Simpson",
+    "tweets": 333,
+    "followers": 545,
+    "avatar": "avatar.jpg"
+  },
+    {
+    "id": 3,
+    "user": "Hermione Kline",
+    "tweets": 111,
+    "followers": 35453,
+    "avatar": "avatar.jpg"
+  },
+    {
+    "id": 4,
+    "user": "Eden Clements",
+    "tweets": 3,
+    "followers": 54,
+    "avatar": "avatar.jpg"
+  },
+    {
+    "id": 5,
+    "user": "Annie Copeland",
+    "tweets": 11,
+    "followers": 7868,
+    "avatar": "avatar.jpg"
+  }
+]
+}
