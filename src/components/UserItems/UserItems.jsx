@@ -6,35 +6,23 @@ import logo from "../../images/logo.png";
 export const UserItems = ({ user }) => {
   const { id, tweets, followers, avatar = avatarDefault } = user
 
-  const [isFollowing, setIsFollowing] = useState(false)
+  const [isFollowing, setIsFollowing] = useState(JSON.parse(localStorage.getItem(`${id}-isFollowing`)) ?? false)
 
-  const [numberFollowers, setNumberFollowers] = useState(followers)
-
+  const [numberFollowers, setNumberFollowers] = useState(JSON.parse(localStorage.getItem(`${id}-followers`)) ?? followers)
+    
   useEffect(() => {
-  localStorage.setItem(`${id} isFollowing`, isFollowing);
-}, [isFollowing]);
-
-useEffect(() => {
-  const storedIsFollowing = localStorage.getItem('isFollowing');
-  console.log("storedIsFollowing:", storedIsFollowing)
-  // if (storedIsFollowing !== null) {
-  //   setIsFollowing(Boolean(storedIsFollowing));
-  // }
-
-}, []);
-
-
+    localStorage.setItem(`${id}-isFollowing`, JSON.stringify(isFollowing));
+    localStorage.setItem(`${id}-followers`, JSON.stringify(numberFollowers));
+  }, [isFollowing, numberFollowers]);
 
   const onFollowClick = () => {
-    setIsFollowing(!isFollowing)
+    setIsFollowing(true);
     setNumberFollowers(numberFollowers + 1)
-    // localStorage.setItem(`${id} followers`, numberFollowers)
   }
 
     const onFollowingClick = () => {
-      setIsFollowing(!isFollowing)
+      setIsFollowing(false);
       setNumberFollowers(numberFollowers - 1)
-      // localStorage.setItem(`${id} followers`, numberFollowers)
   }
 
   return <div className={css.userCard}>
