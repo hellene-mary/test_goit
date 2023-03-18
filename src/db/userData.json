@@ -5,35 +5,42 @@
     "user": "Elon Reeve Musk",
     "tweets": 777,
     "followers": 100500,
-    "avatar": "avatar.jpg"
+    "avatar": "https://w7.pngwing.com/pngs/481/915/png-transparent-computer-icons-user-avatar-woman-avatar-computer-business-conversation-thumbnail.png"
   },
   {
     "id": 2,
     "user": "Rosie Simpson",
     "tweets": 333,
     "followers": 545,
-    "avatar": "avatar.jpg"
+    "avatar": "https://www.shareicon.net/data/256x256/2016/09/15/829453_user_512x512.png"
   },
     {
     "id": 3,
     "user": "Hermione Kline",
     "tweets": 111,
     "followers": 35453,
-    "avatar": "avatar.jpg"
+    "avatar": "https://www.shareicon.net/data/256x256/2016/09/01/822737_user_512x512.png"
   },
     {
     "id": 4,
     "user": "Eden Clements",
     "tweets": 3,
     "followers": 54,
-    "avatar": "avatar.jpg"
+    "avatar": "https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png"
   },
-    {
+  {
     "id": 5,
     "user": "Annie Copeland",
     "tweets": 11,
     "followers": 7868,
-    "avatar": "avatar.jpg"
+    "avatar": "https://www.shareicon.net/data/512x512/2016/09/15/829452_user_512x512.png"
+  },
+  {
+    "id": 6,
+    "user": "Bob Marley",
+    "tweets": 1135,
+    "followers": 78618,
+    "avatar": "https://w7.pngwing.com/pngs/481/915/png-transparent-computer-icons-user-avatar-woman-avatar-computer-business-conversation-thumbnail.png"
   }
 ]
 }
