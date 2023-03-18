@@ -6,7 +6,7 @@ import goit_logo from "../../images/goit_logo.png";
 
 export const UserItems = ({ user }) => {
   const { id, tweets, followers, avatar = avatarDefault } = user;
-  console.log("logo:", goit_logo)
+  // console.log("logo:", goit_logo)
 
   const [isFollowing, setIsFollowing] = useState(JSON.parse(localStorage.getItem(`${id}-isFollowing`)) ?? false)
   const [numberFollowers, setNumberFollowers] = useState(JSON.parse(localStorage.getItem(`${id}-followers`)) ?? followers)
@@ -14,7 +14,7 @@ export const UserItems = ({ user }) => {
   useEffect(() => {
     localStorage.setItem(`${id}-isFollowing`, JSON.stringify(isFollowing));
     localStorage.setItem(`${id}-followers`, JSON.stringify(numberFollowers));
-  }, [isFollowing, numberFollowers]);
+  }, [isFollowing, numberFollowers, id]);
 
   const onFollowClick = () => {
     setIsFollowing(true);
