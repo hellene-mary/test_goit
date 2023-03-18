@@ -4,10 +4,9 @@ import avatarDefault from "../../images/avatarDefault.png";
 import logo from "../../images/logo.png";
 
 export const UserItems = ({ user }) => {
-  const { id, tweets, followers, avatar = avatarDefault } = user
+  const { id, tweets, followers, avatar = avatarDefault } = user;
 
   const [isFollowing, setIsFollowing] = useState(JSON.parse(localStorage.getItem(`${id}-isFollowing`)) ?? false)
-
   const [numberFollowers, setNumberFollowers] = useState(JSON.parse(localStorage.getItem(`${id}-followers`)) ?? followers)
     
   useEffect(() => {
