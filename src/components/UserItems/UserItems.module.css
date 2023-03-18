@@ -1,4 +1,5 @@
-.UserCard {
+.userCard {
+  padding: 28px 20px 36px 20px;
   width: 380px;
   height: 460px;
   border-radius: 20px;
@@ -6,4 +7,128 @@
   background-color: #5736A3;
   background: linear-gradient(114.99deg, #471CA9 -0.99%, #5736A3 54.28%, #4B2A99 78.99%);
   box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+
+  box-sizing: border-box;
 }
+
+.userCard::before {
+  content: '';
+  display: block;
+  height: 8px;
+  width: 380px;
+
+  position: absolute;
+  top: 214px;
+  left: 0;
+
+  background-color: #EBD8FF;
+  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06), inset 0px -1.71846px 3.43693px #AE7BE3, inset 0px 3.43693px 2.5777px #FBF8FF;
+}
+
+.logo{
+  /* border: 1px solid red; */
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.imageContainer{
+  /* padding: 28px 36px; */
+  background-image: url(../../images/picture.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 168px;
+  width: 308px;
+}
+
+.picture{
+  padding: 8px 16px;
+}
+
+.avatarContainer{
+  /* border: 8px solid #EBD8FF; */
+  /* box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06), inset 0px -1.71846px 3.43693px #AE7BE3, inset 0px 3.43693px 2.5777px #FBF8FF; */
+  border-radius: 50%;
+  position: absolute;
+  top: 178px;
+  left: 150px;
+  border: 8px solid #EBD8FF;
+  
+  /* box-shadow: inset 0px -1.71846px 3.43693px #AE7BE3, inset 0px 3.43693px 2.5777px #FBF8FF; */
+}
+
+.avatar{
+  background-color: #5736A3;
+  /* border: 8px solid #EBD8FF; */
+
+  border-radius: 50%;
+  /* box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06); */
+  box-shadow: 0px 3.43693px 3.43693px rgba(171, 47, 47, 0.6);
+  box-shadow: 0px -1.71846px 3.43693px #04ff43;
+
+  /* position: absolute;
+  top: 178px;
+  left: 150px; */
+}
+
+
+
+/* .userCard::after {
+  content: '';
+  display: block;
+  height: 8px;
+  width: 380px;
+
+  position: absolute;
+  top: 250px;
+  left: 0;
+
+  background-color: #EBD8FF;
+  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06), inset 0px -1.71846px 3.43693px #AE7BE3, inset 0px 3.43693px 2.5777px #FBF8FF;
+} */
+
+.textContainer{
+  text-align: center;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+
+  color: #EBD8FF;
+}
+
+.button {
+  margin-top: 10px;
+  width: 196px;
+  padding: 14px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+
+  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: currentColor;
+}
+
+.following{
+  background-color: #5CD3A8;
+  
+}
+
+.follow{
+  background-color: #EBD8FF;
+}
+
