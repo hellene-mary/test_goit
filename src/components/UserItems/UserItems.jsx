@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react'
 import css from './UserItems.module.css'
 import avatarDefault from "../../images/avatarDefault.png";
-import logo from "../../images/logo.png";
+import Logo from "../../images/logo.png";
+
 
 export const UserItems = ({ user }) => {
   const { id, tweets, followers, avatar = avatarDefault } = user;
+  console.log("logo:", Logo)
 
   const [isFollowing, setIsFollowing] = useState(JSON.parse(localStorage.getItem(`${id}-isFollowing`)) ?? false)
   const [numberFollowers, setNumberFollowers] = useState(JSON.parse(localStorage.getItem(`${id}-followers`)) ?? followers)
@@ -26,7 +28,7 @@ export const UserItems = ({ user }) => {
 
   return <div className={css.userCard}>
 
-    {/* <img src={logo} alt='logo' className={css.logo} width='76' /> */}
+    <img src={Logo} alt='logo' className={css.logo} width='76' />
     {/* <svg width='76' height={22} fill='red'>
       <use href='../../images/logo.svg#icon-logo'/>
     </svg> */}
