@@ -26,7 +26,10 @@ export const UserItems = ({ user }) => {
 
   return <div className={css.userCard}>
 
-    <img src={logo} alt='logo' className={css.logo} width='76' />
+    {/* <img src={logo} alt='logo' className={css.logo} width='76' /> */}
+    {/* <svg width='76' height={22} fill='red'>
+      <use href='../../images/logo.svg#icon-logo'/>
+    </svg> */}
     <div className={css.imageContainer}>
 
     </div>
