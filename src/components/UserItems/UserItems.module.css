@@ -1,21 +1,17 @@
 .userCard {
+  position: relative;
+  box-sizing: border-box;
   padding: 28px 20px 36px 20px;
   width: 380px;
   height: 460px;
   border-radius: 20px;
-
   background-color: #5736A3;
   background: linear-gradient(114.99deg, #471CA9 -0.99%, #5736A3 54.28%, #4B2A99 78.99%);
   box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
-  position: relative;
-
-  box-sizing: border-box;
 }
 
 .userCard::before {
@@ -23,11 +19,9 @@
   display: block;
   height: 8px;
   width: 380px;
-
   position: absolute;
   top: 214px;
   left: 0;
-
   background-color: #EBD8FF;
   box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06), inset 0px -1.71846px 3.43693px #AE7BE3, inset 0px 3.43693px 2.5777px #FBF8FF;
 }
@@ -46,11 +40,8 @@
   width: 308px;
 }
 
-.picture{
-  padding: 8px 16px;
-}
-
 .avatarContainer{
+  background-color: #5736A3;
   width: 64px;
   height: 64px;
   border: 8px solid #EBD8FF;
@@ -59,11 +50,9 @@
   position: absolute;
   top: 178px;
   left: 150px;
-  
 }
 
 .avatar{
-  background-color: #5736A3;
   border-radius: 50%;
 }
 
@@ -77,7 +66,6 @@
   line-height: 24px;
   text-transform: uppercase;
   margin-bottom: 16px;
-
   color: #EBD8FF;
 }
 
@@ -90,10 +78,17 @@
   font-size: 18px;
   line-height: 22px;
   text-transform: uppercase;
+  text-shadow: none;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   border: currentColor;
+}
+
+.button:hover{
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 .following{

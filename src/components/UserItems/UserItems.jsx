@@ -6,8 +6,6 @@ import goit_logo from "../../images/goit_logo.png";
 
 export const UserItems = ({ user }) => {
   const { id, tweets, followers, avatar = avatarDefault } = user;
-  // console.log("logo:", goit_logo)
-
   const [isFollowing, setIsFollowing] = useState(JSON.parse(localStorage.getItem(`${id}-isFollowing`)) ?? false)
   const [numberFollowers, setNumberFollowers] = useState(JSON.parse(localStorage.getItem(`${id}-followers`)) ?? followers)
     
@@ -29,13 +27,7 @@ export const UserItems = ({ user }) => {
   return <div className={css.userCard}>
 
     <img src={goit_logo} alt='logo' className={css.logo} width='76' />
-    {/* <svg width='76' height={22} fill='red'>
-      <use href='../../images/logo.svg#icon-logo'/>
-    </svg> */}
-    <div className={css.imageContainer}>
-
-    </div>
-
+    <div className={css.imageContainer}></div>
     <div className={css.avatarContainer}>
       <img src={avatar} alt='avatar' className={css.avatar} width='64' />
     </div>
@@ -44,10 +36,10 @@ export const UserItems = ({ user }) => {
       <p className={css.text}>{tweets} tweets</p>
       <p className={css.text}>{numberFollowers.toLocaleString('en-US')} followers</p>
       {isFollowing ?
-        <button
+        <button type='button'
           onClick={onFollowingClick}
           className={`${css.button} ${css.following}`}>Following</button>
-      : <button
+      : <button type='button'
           onClick={onFollowClick}
           className={`${css.button} ${css.follow}`}>Follow</button>
       }
