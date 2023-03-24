@@ -12,6 +12,7 @@ export const UserItems = ({ user }) => {
   useEffect(() => {
     localStorage.setItem(`${id}-isFollowing`, JSON.stringify(isFollowing));
     localStorage.setItem(`${id}-followers`, JSON.stringify(numberFollowers));
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isFollowing, numberFollowers]);
 
   const onFollowClick = () => {
