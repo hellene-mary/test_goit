@@ -12,7 +12,7 @@ export const UserItems = ({ user }) => {
   useEffect(() => {
     localStorage.setItem(`${id}-isFollowing`, JSON.stringify(isFollowing));
     localStorage.setItem(`${id}-followers`, JSON.stringify(numberFollowers));
-  }, [isFollowing, numberFollowers, id]);
+  }, [isFollowing, numberFollowers]);
 
   const onFollowClick = () => {
     setIsFollowing(true);
