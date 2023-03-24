@@ -1,5 +1,5 @@
 Hello and welcome to this GitHub repository! 
-This project was created using Create React App and is a test task from GoIt.
+This project was created with [Create React App](https://github.com/facebook/create-react-app) and is a test task from GoIt.
 
 The application is written in React, and the styles are implemented using module.css. The goal of this task is to create a user card and add interactivity when the user clicks on the Follow button.
 
